@@ -5,5 +5,4 @@ deployment:
     - /bin/rsync -av \
     --exclude=".git" \
     --exclude="node_modules" \
-    --exclude=".env" \
     frontend/ $DEPLOYPATH
