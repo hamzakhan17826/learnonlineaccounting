@@ -1,8 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/parenijj/learnonlineaccounting.com
-    - /bin/rsync -av \
-    --exclude=".git" \
-    --exclude="node_modules" \
-    frontend/ $DEPLOYPATH
+    - export DEPLOYPATH=/home/parenijj/learnonlineaccounting.com/
+    - /bin/cp -R --no-preserve=mode,ownership frontend/* $DEPLOYPATH
