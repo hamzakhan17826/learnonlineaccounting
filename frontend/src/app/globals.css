@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --primary: #0f1c44;
+    --secondary: #8b0d0f;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #ffffff;
+    }
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+  }
+}
