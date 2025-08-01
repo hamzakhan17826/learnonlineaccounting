@@ -15,7 +15,7 @@ export default function ExpandableText() {
       {textToShow}
       <span
         onClick={() => setExpanded(!expanded)}
-        className="text-secondary font-medium cursor-pointer ml-2"
+        className="text-blue-400 font-medium cursor-pointer ml-2"
       >
         {expanded ? "Show Less" : "Read More"}
       </span>

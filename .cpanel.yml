@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/parenijj/learnonlineaccounting.com/
-    - /bin/cp -R --no-preserve=mode,ownership frontend/* $DEPLOYPATH
+    - cd frontend
+    - npm ci
+    - npm run build
