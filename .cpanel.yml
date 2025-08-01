@@ -1,7 +1,7 @@
 deployment:
   tasks:
     - echo "=== Deployment Started ===" >> /home/parenijj/deploy.log
-    - cd frontend
+    - source /home/parenijj/nodevenv/learnonlineaccounting.com/20/bin/activate && cd /home/parenijj/learnonlineaccounting.com/frontend
     - npm ci >> /home/parenijj/deploy.log 2>&1
     - npm run build >> /home/parenijj/deploy.log 2>&1
     - export DEPLOYPATH="/home/parenijj/learnonlineaccounting.com/"
